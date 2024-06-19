@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>首页</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <style>
+    .br {
+      border-right: 2px solid #000;
+    }
+
+    .header {
+      width: 100%;
+      height: 980px;
+      background: url('./images/2.jpg') no-repeat;
+      background-size: 100% 100%;
+      position: relative;
+    }
+
+    .h-btns {
+      justify-content: flex-end;
+      padding: 20px;
+      font-weight: 900;
+    }
+
+    .h-logo {
+      margin-top: 100px;
+    }
+
+    .btn-item {
+      margin-left: 20px;
+      padding-right: 20px;
+    }
+
+    .h-search-warp {
+      margin-top: 40px;
+    }
+
+    .h-search input {
+      border: 0;
+      width: 300px;
+      background-color: #ebebeb7d;
+      height: 32px;
+      padding: 0 20px;
+      border-radius: 4px;
+      margin-right: 20px;
+    }
+
+    .header #before,
+    .header #after {
+      position: absolute;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      cursor: pointer;
+      border-radius: 2px;
+      font-size: 36px;
+      z-index: 2;
+    }
+
+    .header #before {
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .header #after {
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .content {
+      width: 100%;
+    }
+
+    .nav-warp {
+      padding: 0 40px;
+      transform: translateY(-50%);
+    }
+
+    .nav {
+      width: 100%;
+      padding: 20px 40px;
+      background-color: #202592;
+      color: #fff;
+    }
+
+    .nav div {
+      font-size: 18px;
+      margin-right: 10px;
+    }
+
+    .bread {
+      padding: 5px 10px;
+      margin-left: 100px;
+      background-color: #d7e1f5;
+      width: 200px;
+    }
+
+    .section-warp {
+      padding: 0 10px;
+      margin-top: 100px;
+    }
+
+    .section-item {
+      padding: 20px 40px;
+      box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+      background-color: #e8e8e8;
+      margin-right: 40px;
+      font-size: 12px;
+    }
+
+    .section-item:nth-last-child(1) {
+      margin: 0;
+    }
+
+    .section-title {
+      color: #000076;
+      font-weight: 900;
+      margin-bottom: 40px;
+      text-align: center;
+      font-size: 24px;
+    }
+
+    .section-item:nth-of-type(2n) {
+      transform: translateY(-90px);
+    }
+
+    .time {
+      text-align: right;
+      margin-bottom: 20px;
+      margin-top: 10px;
+
+    }
+
+    .desc {
+      text-align: center;
+      margin-bottom: 20px;
+      margin-top: 10px;
+    }
+
+    .footer-warp {
+      margin-top: 100px;
+      width: 100%;
+      padding: 0 20px;
+      margin-bottom: 40px;
+      font-size: 14px;
+    }
+
+    .f-l,
+    .f-r {
+      width: 40%;
+    }
+
+    .footer .section-title {
+      border-bottom: 1px solid #000;
+      padding: 10px 20px;
+      text-align: left;
+    }
+
+    .f-r {
+      text-align: center;
+    }
+
+    .fl-item {
+      margin-bottom: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <div class="h-btns row align-center">
+      <img src="./images/人.png" alt="">
+      <div class="btn-item br"><a href="attach.html">我的杭电</a></div>
+      <div class="btn-item br"><a href="attach.html">联系我们</a></div>
+      <div class="btn-item">English</div>
+    </div>
+    <div class="h-logo row space-center">
+      <img src="./images/logo图.jpg" alt="">
+    </div>
+    <div class="h-search-warp row align-center space-center">
+      <div class="h-search row align-center space-center">
+        <input type="text" placeholder="请输入内容">
+        <img src="./images/搜索.png" alt="">
+      </div>
+    </div>
+    <div id="before">&lt;</div>
+    <div id="after">&gt;</div>
+  </div>
+  <div class="content">
+    <div class="nav-warp row space-center">
+      <div class="nav row align-center">
+        <div class="nav-item row align-center fl1">
+          <div><a href="attach.html">首页</a></div>
+          <img src="./images/下箭头.png" alt="">
+        </div>
+        <div class="nav-item row align-center fl1">
+          <div><a href="attach.html">课程介绍</a></div>
+          <img src="./images/下箭头.png" alt="">
+        </div>
+        <div class="nav-item row align-center fl1">
+          <div><a href="attach.html">师资队伍</a></div>
+          <img src="./images/下箭头.png" alt="">
+        </div>
+        <div class="nav-item row align-center fl1">
+          <div><a href="attach.html">学术研究</a></div>
+          <img src="./images/下箭头.png" alt="">
+        </div>
+        <div class="nav-item row align-center fl1">
+          <div><a href="attach.html">学生活动</a></div>
+          <img src="./images/下箭头.png" alt="">
+        </div>
+        <div class="nav-item row align-center fl1">
+          <div><a href="attach.html">招生信息</a></div>
+          <img src="./images/下箭头.png" alt="">
+        </div>
+        <div class="nav-item row align-center fl1">
+          <div><a href="attach.html">联系我们</a></div>
+          <img src="./images/下箭头.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="bread">当前位置：首页</div>
+    <div class="section-warp">
+      <div class="section row space-between">
+
+        <div class="section-item">
+          <div class="section-title"><a href="attach.html">重要活动</a></div>
+          <div class="section-content-item">
+            <div class="text"><a href="attach.html">—流课程研讨会</a></div>
+            <div class="time">
+              2024-05-10
+            </div>
+          </div>
+          <div class="section-content-item">
+            <div class="text"><a href="attach.html">杭电x黑岩课程教学校企共建研讨会</a></div>
+            <div class="time">
+              2024-05-10
+
+            </div>
+          </div>
+          <div class="section-content-item">
+            <div class="text"><a href="attach.html">人艺数法学院召开本科教学审核评估工作动员会</a></div>
+            <div class="time">
+
+              2024-03-08
+            </div>
+          </div>
+          <div class="section-content-item">
+            <div class="text"><a href="attach.html">人艺数法学院召开教学工作会议</a></div>
+            <div class="time">
+              2024-03-08
+            </div>
+          </div>
+        </div>
+
+        <div class="section-item">
+          <div class="section-title"><a href="attach.html">学院新闻</a></div>
+          <div class="section-content-item">
+            <div class="text"><a href="attach.html">2024年杭电人文艺术与数字媒体学院调剂考生复试名单</a></div>
+            <div class="time">
+              2024-04-09
+            </div>
+          </div>
+          <div class="section-content-item">
+            <div class="text"><a href="attach.html">法学院2024年硕士研究生调剂复试录取工作方案</a></div>
+            <div class="time">
+              2024-04-07
+
+            </div>
+          </div>
+          <div class="section-content-item">
+            <div class="text"><a href="attach.html">2024年人文艺术与数字媒体学院调剂复试工作细则</a></div>
+            <div class="time">
+
+              2024-04-07
+            </div>
+          </div>
+          <div class="section-content-item">
+            <div class="text"><a href="attach.html">2024年人文艺术与数字媒体学院硕士研究生招生复试工作细则</a></div>
+            <div class="time">
+              2024-03-26
+            </div>
+          </div>
+        </div>
+
+        <div class="section-item">
+          <div class="section-title"><a href="attach.html">学生作品</a></div>
+          <div class="section-content-item">
+            <img src="./images/11.png" alt="">
+            <div class="desc">
+              <a href="attach.html"> 毕业设计</a>
+            </div>
+          </div>
+          <div class="section-content-item">
+            <img src="./images/22.png" alt="">
+            <div class="desc">
+              <a href="attach.html">  工业设计</a>
+
+            </div>
+          </div>
+          <div class="section-content-item">
+            <img src="./images/33.png" alt="">
+            <div class="desc">
+              <a href="attach.html">  思维导图优秀作品</a>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="section-item">
+          <div class="section-title"><a href="attach.html">友情链接</a></div>
+          <div class="section-content-item">
+          <a href="https://aisite.wejianzhan.com/"> <img src="./images/44.png" alt=""></a>
+          </div>
+          <div class="section-content-item">
+         <a href="https://www.hdu.edu.cn/" > <img src="./images/55.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-warp">
+      <div class="footer row space-between">
+        <div class="f-l">
+          <div class="section-title"><a href="attach.html">联系我们</a></div>
+          <div class="fl-item">地址:杭州市下沙高教园区杭州电子科技大学人文艺术与数字媒体学院</div>
+          <div class="fl-item">联系电话:0571-86878505 86919147</div>
+          <div class="fl-item">网址: http://publish.hdu.edu.cn/</div>
+        </div>
+        <div class="f-r">
+          <div class="section-title"><a href="attach.html">订阅官方微信号</a></div>
+          <div class="row space-between">
+            <div>
+              <img src="./images/二维码1.jpg" alt="">
+              <div><a href="attach.html">学院官方公众号</a></div>
+            </div>
+            <div>
+              <img src="./images/二维码2.jpg" alt="">
+              <div><a href="attach.html">杭州电子科技大学官方公众号</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./js/swiper.js"></script>
+
+</html>
